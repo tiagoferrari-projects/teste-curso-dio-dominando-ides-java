@@ -8,6 +8,22 @@ public class PrimeiroProjeto {
 		
 		Gato gato = new Gato();
 		Livro livro = new Livro();
+		
+		gato.setNome("Menino");
+		gato.getNome();
+		
+		gato.setCor("Malhado");
+		gato.getCor();
+		
+		gato.setIdade(15);
+		gato.getClass();
+		
+		livro.setNome("Coleção O Senhor dos Anéis");
+		livro.getNome();
+		
+		livro.setnumPaginas(1568);
+		livro.getnumPaginas();
+				
 		System.out.println(gato);
 		System.out.println(livro);
 		/*int a = 2;
@@ -20,4 +36,26 @@ public class PrimeiroProjeto {
 class Livro {
 	private String nome;
 	private Integer numPaginas;
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public int getnumPaginas() {
+		return numPaginas;
+	}
+	
+	public void setnumPaginas(int numPaginas) {
+		this.numPaginas = numPaginas;
+	}
+	
+	@Override
+	public String toString() {
+		return "Livro [nome = " + nome + ", Número de Páginas = " + numPaginas + "páginas]";
+	}
+	
 }
